@@ -22,7 +22,7 @@ class Scraper
   
   def get_courses
     doc.css(".post").each do |post|
-
+      make_courses(post)
     end
   end
   
