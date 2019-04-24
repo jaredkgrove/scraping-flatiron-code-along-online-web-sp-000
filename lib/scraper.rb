@@ -21,9 +21,7 @@ class Scraper
   end
   
   def get_courses
-    self.get_page.css(".post").each do |post|
-      make_courses(post)
-    end
+    self.get_page.css(".post")
   end
   
   def make_courses(post)
