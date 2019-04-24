@@ -26,7 +26,7 @@ class Scraper
     end
   end
   
-  def make_courses
+  def make_courses(post)
       course = Course.new
       course.title = post.css("h2").text
       course.schedule = post.css(".date").text
